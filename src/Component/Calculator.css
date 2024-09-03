@@ -1,0 +1,139 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Theme Variables */
+:root {
+    --background-color: #1e293b;
+    --button-background: #6e8098;
+    --button-active-shadow: #334155;
+    --button-active-transform: translateY(5px);
+    --button-text-color: #e2e8f0;
+    --accent-button-background: #f97316;
+    --input-background: #ffffff;
+    --input-border-color: #e2e8f0;
+    --text-color: #e2e8f0;
+}
+
+/* Theme Modern Minimalist */
+.theme-modern-minimalist {
+    --background-color: #dcdce0;
+    --button-background: #3b82f6;
+    --button-active-shadow: #1e40af;
+    --accent-button-background: #f87171;
+    --text-color: #1f2937;
+}
+
+/* Theme Dark Mode */
+.theme-dark-mode {
+    --background-color: #1e293b;
+    --button-background: #64748b;
+    --button-active-shadow: #334155;
+    --accent-button-background: #f97316;
+    --text-color: #e2e8f0;
+}
+
+/* Theme Classic Retro */
+.theme-classic-retro {
+    --background-color: #dcdce0;
+    --button-background: #ffbe0b;
+    --button-active-shadow: #eab308;
+    --accent-button-background: #ff006e;
+    --text-color: #3a3a3a;
+}
+
+/* Theme Soft Pastels */
+.theme-soft-pastels {
+    --background-color: #dcdce0;
+    --button-background: #a0c4ff;
+    --button-active-shadow: #6a5acd;
+    --accent-button-background: #ffc6ff;
+    --text-color: #5a5a5a;
+    --button-text-color: #000000;
+
+}
+
+/* Theme Monochrome Elegance */
+.theme-monochrome-elegance {
+    --background-color: #dcdce0;
+    --button-background: #2d2d2d;
+    --button-active-shadow: #1a1a1a;
+    --accent-button-background: #1a1a1a;
+    --text-color: #0d0d0d;
+}
+.main {
+    background-color: var(--accent-button-background);
+    height: 100vh;
+    width: 100%;
+    padding: 1px;
+
+}
+.main11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 50px auto;
+    width: 450px;
+    height: 650px;
+    border-radius: 15px;
+    background-color: var(--background-color);
+    box-shadow: 0px 0px 20px rgb(41, 41, 41);
+}
+
+
+.main1 {
+    display: flex;
+    gap: 25px;
+}
+
+p {
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--text-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Button {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border-radius: 100px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 0 var(--button-active-shadow);
+    font-size: 16px;
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Button:active {
+    box-shadow: none;
+    transform: var(--button-active-transform);
+}
+
+.bt1 {
+    background-color: var(--accent-button-background);
+}
+
+input {
+    width: 330px;
+    height: 50px;
+    border-radius: 50px;
+    border: none !important;
+    padding-right: 25px;
+    outline: none;
+    text-align: right;
+    background-color: var(--input-background);
+    border-color: var(--input-border-color);
+    box-shadow: 0 0 10px var(--accent-button-background);
+}
+
+.input {
+    margin-bottom: 10px;
+}
